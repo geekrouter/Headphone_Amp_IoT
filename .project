@@ -24,4 +24,16 @@
 		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
 		<nature>org.eclipse.cdt.core.ccnature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>FatFS</name>
+			<type>2</type>
+			<location>D:/Eclipse_workspace/Headphone_Amp_IoT/stm32f4_mylib/FatFS</location>
+		</link>
+		<link>
+			<name>stm32f4_lib</name>
+			<type>2</type>
+			<location>D:/Eclipse_workspace/Headphone_Amp_IoT/stm32f4_mylib/src</location>
+		</link>
+	</linkedResources>
 </projectDescription>

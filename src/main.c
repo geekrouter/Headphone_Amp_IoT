@@ -8,6 +8,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "diag/Trace.h"
+#include "RCC.h"
+#include "USART.h"
+#include "GPIO.h"
+#include "SysTick.h"
 
 // ----------------------------------------------------------------------------
 //
@@ -31,11 +35,9 @@
 
 int main(int argc, char* argv[])
 {
-  // At this stage the system clock should have already been configured
-  // at high speed.
+	RCC_SetClockFrequency(RCC_PLLM, RCC_PLLN, RCC_PLLQ, RCC_PLLP);
 
-  // Infinite loop
-  while (1)
+	while (1)
     {
        // Add your code here.
     }
