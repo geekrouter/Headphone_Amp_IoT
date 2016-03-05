@@ -1,0 +1,3 @@
+[submodule "stm32f4_mylib"]
+	path = stm32f4_mylib
+	url = https://github.com/scyphio122/stm32f4_mylib.git
