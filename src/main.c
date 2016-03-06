@@ -12,7 +12,7 @@
 #include "USART.h"
 #include "GPIO.h"
 #include "SysTick.h"
-
+#include "fifo.h"
 // ----------------------------------------------------------------------------
 //
 // Standalone STM32F4 empty sample (trace via ITM).
@@ -33,13 +33,32 @@
 #pragma GCC diagnostic ignored "-Wmissing-declarations"
 #pragma GCC diagnostic ignored "-Wreturn-type"
 
+
+static void Uart_2_Init(void)
+{
+	Fifo_Init(&uart2_rx_fifo, uart2_rx_buf, sizeof(uart2_rx_buf));
+//	UART_Config(USART2, , 115200, true);
+}
+
 int main(int argc, char* argv[])
 {
+	///	Configure RCC clock to CPU_FREQ frequency
 	RCC_SetClockFrequency(RCC_PLLM, RCC_PLLN, RCC_PLLQ, RCC_PLLP);
+	///	Configure SysTick to tick every 1ms
+	SysTick_Config(CPU_FREQ*1000);
+	///	Usart Configure
+	Uart_2_Init();
+	///	Configure pins for UASRT1
+	GPIO_AlternateFunctionPrepare(GPIOA, PIN_9 | PIN_10, gpio_otyper_push_pull, gpio_speed_fast, gpio_pupd_pull_up);
+	GPIO_AlternateFunctionSet(GPIOA, PIN_9, AF7);
+	GPIO_AlternateFunctionSet(GPIOA, PIN_10, AF7);
+
+
 
 	while (1)
     {
-       // Add your code here.
+		// Add your code here.
+		__WFE();
     }
 }
 
