@@ -73,11 +73,7 @@ stm32f4_mylib/src/USART.o: ../stm32f4_mylib/src/USART.c \
  D:\Eclipse_workspace\Headphone_Amp_IoT\stm32f4_mylib\inc/RCC.h \
  D:\Eclipse_workspace\Headphone_Amp_IoT\stm32f4_mylib\inc/fifo.h \
  D:\Eclipse_workspace\Headphone_Amp_IoT\stm32f4_mylib\inc/error_types.h \
- ../system/include/cmsis/cmsis_gcc.h \
- ../system/include/cmsis/cmsis_device.h \
- ../system/include/cmsis/stm32f4xx.h ../system/include/cmsis/core_cm4.h \
- ../system/include/cmsis/core_cmInstr.h \
- ../system/include/cmsis/core_cmFunc.h \
+ ../system/include/diag/Trace.h \
  D:\Eclipse_workspace\Headphone_Amp_IoT\stm32f4_mylib\inc/fifo.h \
  D:\Eclipse_workspace\Headphone_Amp_IoT\stm32f4_mylib\inc/error_types.h
 
@@ -231,17 +227,7 @@ D:\Eclipse_workspace\Headphone_Amp_IoT\stm32f4_mylib\inc/fifo.h:
 
 D:\Eclipse_workspace\Headphone_Amp_IoT\stm32f4_mylib\inc/error_types.h:
 
-../system/include/cmsis/cmsis_gcc.h:
-
-../system/include/cmsis/cmsis_device.h:
-
-../system/include/cmsis/stm32f4xx.h:
-
-../system/include/cmsis/core_cm4.h:
-
-../system/include/cmsis/core_cmInstr.h:
-
-../system/include/cmsis/core_cmFunc.h:
+../system/include/diag/Trace.h:
 
 D:\Eclipse_workspace\Headphone_Amp_IoT\stm32f4_mylib\inc/fifo.h:
 

@@ -14,6 +14,7 @@ C_SRCS += \
 ../stm32f4_mylib/src/TIM.c \
 ../stm32f4_mylib/src/USART.c \
 ../stm32f4_mylib/src/dac.c \
+../stm32f4_mylib/src/error_types.c \
 ../stm32f4_mylib/src/fifo.c \
 ../stm32f4_mylib/src/misc.c \
 ../stm32f4_mylib/src/sd_card_reader.c \
@@ -30,6 +31,7 @@ OBJS += \
 ./stm32f4_mylib/src/TIM.o \
 ./stm32f4_mylib/src/USART.o \
 ./stm32f4_mylib/src/dac.o \
+./stm32f4_mylib/src/error_types.o \
 ./stm32f4_mylib/src/fifo.o \
 ./stm32f4_mylib/src/misc.o \
 ./stm32f4_mylib/src/sd_card_reader.o \
@@ -46,6 +48,7 @@ C_DEPS += \
 ./stm32f4_mylib/src/TIM.d \
 ./stm32f4_mylib/src/USART.d \
 ./stm32f4_mylib/src/dac.d \
+./stm32f4_mylib/src/error_types.d \
 ./stm32f4_mylib/src/fifo.d \
 ./stm32f4_mylib/src/misc.d \
 ./stm32f4_mylib/src/sd_card_reader.d \

@@ -1,5 +1,5 @@
-src/main.o: ../src/main.c ../system/include/diag/Trace.h \
- D:\Eclipse_workspace\Headphone_Amp_IoT\stm32f4_mylib\inc/RCC.h \
+src/irq_handlers.o: ../src/irq_handlers.c \
+ D:\Eclipse_workspace\Headphone_Amp_IoT\stm32f4_mylib\inc/USART.h \
  ../system/include/cmsis/stm32f4xx.h \
  ../system/include/cmsis/stm32f405xx.h ../system/include/cmsis/core_cm4.h \
  ../system/include/cmsis/core_cmInstr.h \
@@ -70,17 +70,12 @@ src/main.o: ../src/main.c ../system/include/diag/Trace.h \
  ../system/include/stm32f4-hal/stm32f4xx_hal_fmpi2c.h \
  ../system/include/stm32f4-hal/stm32f4xx_hal_spdifrx.h \
  ../system/include/stm32f4-hal/stm32f4xx_hal_lptim.h \
- D:\Eclipse_workspace\Headphone_Amp_IoT\stm32f4_mylib\inc/USART.h \
  D:\Eclipse_workspace\Headphone_Amp_IoT\stm32f4_mylib\inc/RCC.h \
  D:\Eclipse_workspace\Headphone_Amp_IoT\stm32f4_mylib\inc/fifo.h \
  D:\Eclipse_workspace\Headphone_Amp_IoT\stm32f4_mylib\inc/error_types.h \
- D:\Eclipse_workspace\Headphone_Amp_IoT\stm32f4_mylib\inc/GPIO.h \
- D:\Eclipse_workspace\Headphone_Amp_IoT\stm32f4_mylib\inc/SysTick.h \
- D:\Eclipse_workspace\Headphone_Amp_IoT\stm32f4_mylib\inc/fifo.h
+ ../system/include/diag/Trace.h
 
-../system/include/diag/Trace.h:
-
-D:\Eclipse_workspace\Headphone_Amp_IoT\stm32f4_mylib\inc/RCC.h:
+D:\Eclipse_workspace\Headphone_Amp_IoT\stm32f4_mylib\inc/USART.h:
 
 ../system/include/cmsis/stm32f4xx.h:
 
@@ -224,16 +219,10 @@ D:\Eclipse_workspace\Headphone_Amp_IoT\stm32f4_mylib\inc/RCC.h:
 
 ../system/include/stm32f4-hal/stm32f4xx_hal_lptim.h:
 
-D:\Eclipse_workspace\Headphone_Amp_IoT\stm32f4_mylib\inc/USART.h:
-
 D:\Eclipse_workspace\Headphone_Amp_IoT\stm32f4_mylib\inc/RCC.h:
 
 D:\Eclipse_workspace\Headphone_Amp_IoT\stm32f4_mylib\inc/fifo.h:
 
 D:\Eclipse_workspace\Headphone_Amp_IoT\stm32f4_mylib\inc/error_types.h:
 
-D:\Eclipse_workspace\Headphone_Amp_IoT\stm32f4_mylib\inc/GPIO.h:
-
-D:\Eclipse_workspace\Headphone_Amp_IoT\stm32f4_mylib\inc/SysTick.h:
-
-D:\Eclipse_workspace\Headphone_Amp_IoT\stm32f4_mylib\inc/fifo.h:
+../system/include/diag/Trace.h:

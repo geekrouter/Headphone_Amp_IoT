@@ -37,7 +37,9 @@
 static void Uart_2_Init(void)
 {
 	Fifo_Init(&uart2_rx_fifo, uart2_rx_buf, sizeof(uart2_rx_buf));
-//	UART_Config(USART2, , 115200, true);
+	UART_Config(USART2, USART_CR1_M | USART_CR1_PCE, 115200, true);
+	Uart_Enable_Rx_IRQ(USART2);
+	Uart_Enable_Rx(USART2);
 }
 
 int main(int argc, char* argv[])
